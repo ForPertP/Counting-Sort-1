@@ -15,7 +15,7 @@ vector<string> split(const string &);
 
 vector<int> countingSort(vector<int> arr)
 {
-    vector<int> count(100);
+    vector<int> count(100, 0);
    
     for (const auto n : arr)
     {
