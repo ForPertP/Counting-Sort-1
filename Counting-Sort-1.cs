@@ -12,6 +12,28 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
+class Result
+{
+
+    /*
+     * Complete the 'countingSort' function below.
+     *
+     * The function is expected to return an INTEGER_ARRAY.
+     * The function accepts INTEGER_ARRAY arr as parameter.
+     */
+
+    public static List<int> countingSort(List<int> arr)
+    {
+        List<int> count = new List<int>(new int[100]);
+
+        foreach (int n in arr)
+        {
+            count[n]++;
+        }
+
+        return count;
+    }
+}
 
 
 class Solution
